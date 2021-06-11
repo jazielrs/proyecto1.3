@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="624.0" style="-fx-background-color: #686673;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLShowStudentsController">
+   <children>
+      <TableView fx:id="tableShow" layoutX="5.0" layoutY="98.0" prefHeight="222.0" prefWidth="611.0">
+        <columns>
+          <TableColumn fx:id="cId" prefWidth="62.0" text="Id" />
+          <TableColumn fx:id="cName" prefWidth="70.0" text="Nombre" />
+            <TableColumn fx:id="cFirstName" prefWidth="72.0" text="Apellidos" />
+            <TableColumn fx:id="cEmail" prefWidth="81.0" text="Email" />
+            <TableColumn fx:id="cIdCarrer" prefWidth="68.0" text="ID Carrera" />
+            <TableColumn fx:id="cIdStudent" prefWidth="76.0" text="Carnet" />
+            <TableColumn fx:id="cMovil" prefWidth="74.0" text="Celular" />
+            <TableColumn fx:id="cAddress" prefWidth="59.0" text="Dirección" />
+            <TableColumn fx:id="cAge" prefWidth="45.0" text="Edad" />
+        </columns>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.08627451211214066" green="0.07450980693101883" blue="0.14901961386203766" />
+               </color>
+            </DropShadow>
+         </effect>
+      </TableView>
+      <Text fill="WHITE" layoutX="211.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Students" textAlignment="CENTER">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

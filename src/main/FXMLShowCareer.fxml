@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="620.0" style="-fx-background-color: #686673;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLShowCareerController">
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="341.0" prefWidth="523.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="careerTable" layoutX="92.0" layoutY="58.0" prefHeight="303.0" prefWidth="436.0">
+              <columns>
+                <TableColumn fx:id="ID" prefWidth="218.0" text="ID" />
+                <TableColumn fx:id="Description" prefWidth="217.0" text="Description" />
+              </columns>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.08627451211214066" green="0.07450980693101883" blue="0.14901961386203766" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TableView>
+            <Text fill="WHITE" layoutX="220.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Display Career" textAlignment="CENTER" wrappingWidth="179.13671875">
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

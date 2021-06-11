@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLMENUController">
+   <top>
+      <AnchorPane prefHeight="32.0" prefWidth="492.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="29.0" prefWidth="609.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Careers">
+                  <items>
+                    <MenuItem fx:id="addCarrer" mnemonicParsing="false" onAction="#addCarrer" text="Add" />
+                        <MenuItem fx:id="modifyCarrer" mnemonicParsing="false" onAction="#modifyCarrer" text="Modify" />
+                        <MenuItem fx:id="eraseCarrer" mnemonicParsing="false" onAction="#eraseCarrer" text="Erase" />
+                        <MenuItem fx:id="showCarrer" mnemonicParsing="false" onAction="#showCarrer" text="Show" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Students">
+                  <items>
+                    <MenuItem fx:id="addStudent" mnemonicParsing="false" onAction="#addStudent" text="Add" />
+                        <MenuItem fx:id="modifyStudent" mnemonicParsing="false" onAction="#modifyStudent" text="Modify" />
+                        <MenuItem fx:id="eraseStudent" mnemonicParsing="false" onAction="#eraseStudent" text="Erase" />
+                        <MenuItem fx:id="showStudent" mnemonicParsing="false" onAction="#showStudent" text="Show" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Courses">
+                  <items>
+                    <MenuItem fx:id="addCourse" mnemonicParsing="false" onAction="#addCourse" text="Add" />
+                        <MenuItem fx:id="modifyCourse" mnemonicParsing="false" onAction="#modifyCourse" text="Modify" />
+                        <MenuItem fx:id="eraseCourse" mnemonicParsing="false" onAction="#eraseCourse" text="Erase" />
+                        <MenuItem fx:id="showCourse" mnemonicParsing="false" onAction="#showCourse" text="Show" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Schedules">
+                    <items>
+                      <MenuItem fx:id="sheduleShow" mnemonicParsing="false" onAction="#sheduleShow" text="Show schudule options" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Enrollment">
+                    <items>
+                      <MenuItem fx:id="makeEnrollment" mnemonicParsing="false" onAction="#makeEnrollment" text="Make enrollment" />
+                        <MenuItem fx:id="removeCourse" mnemonicParsing="false" onAction="#removeCourse" text="Remove courses" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Reports">
+                    <items>
+                      <MenuItem fx:id="reportEnrollment" mnemonicParsing="false" onAction="#reportEnrollment" text="Enrollment report (PDF)" />
+                        <MenuItem fx:id="deEnrollmentReport" mnemonicParsing="false" onAction="#deEnrollmentReport" text="De-enrollment report (PDF)" />
+                    </items>
+                  </Menu>
+              </menus>
+               <effect>
+                  <InnerShadow choke="0.17" height="28.42" radius="12.5975" width="23.97">
+                     <color>
+                        <Color red="0.08627451211214066" green="0.07450980693101883" blue="0.14901961386203766" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </MenuBar>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

@@ -1,0 +1,3 @@
+IF3000,Programacion,4,1
+BI0234,Observacion aves,4,2
+BIO2345,Turismo Ambiental,3,2

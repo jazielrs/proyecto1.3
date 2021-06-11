@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLLoginController">
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #070226;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnLogin" layoutX="214.0" layoutY="292.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="25.0" prefWidth="172.0" style="-fx-background-color: #A6A6A6;" text="Login" textFill="#0d0d0d" visible="false">
+               <font>
+                  <Font name="Segoe UI" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow choke="0.42" height="12.1" width="29.9">
+                     <color>
+                        <Color red="0.08627451211214066" green="0.07450980693101883" blue="0.14901961386203766" />
+                     </color>
+                  </InnerShadow>
+               </effect></Button>
+            <Text fx:id="profileTxt" fill="WHITE" layoutX="80.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile (user):" wrappingWidth="142.783203125">
+               <font>
+                  <Font name="Segoe UI Bold" size="21.0" />
+               </font>
+            </Text>
+            <CheckBox fx:id="checkButtonManager" layoutX="259.0" layoutY="65.0" mnemonicParsing="false" onAction="#managerSelection" prefHeight="21.0" prefWidth="104.0" text="Manager" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="checkButtonStudent" layoutX="390.0" layoutY="65.0" mnemonicParsing="false" onAction="#studentSelection" prefHeight="21.0" prefWidth="91.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </CheckBox>
+            <Text fx:id="txtUsername" fill="WHITE" layoutX="148.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :" visible="false" wrappingWidth="89.783203125">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFieldUsername" layoutX="239.0" layoutY="144.0" prefHeight="25.0" prefWidth="182.0" visible="false">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8421052694320679" green="0.8265107274055481" blue="0.8265107274055481" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+            <Text fx:id="txtPassword" fill="WHITE" layoutX="151.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : " visible="false">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFieldPassword" layoutX="239.0" layoutY="209.0" prefHeight="25.0" prefWidth="182.0" visible="false">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8509804010391235" green="0.8509804010391235" blue="0.8509804010391235" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+            <Text fx:id="txtStudentID" fill="WHITE" layoutX="144.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID :" visible="false" wrappingWidth="92.326171875">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFIeldStudentID" layoutX="245.0" layoutY="141.0" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8509804010391235" green="0.8509804010391235" blue="0.8509804010391235" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <Text fx:id="txtStudentPassword" fill="WHITE" layoutX="143.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password : " visible="false" wrappingWidth="94.76416015625">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtFieldStudentPassword" layoutX="244.0" layoutY="207.0" prefHeight="29.0" prefWidth="172.0" visible="false">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8509804010391235" green="0.8509804010391235" blue="0.8509804010391235" />
+                     </color>
+                  </DropShadow>
+               </effect></TextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

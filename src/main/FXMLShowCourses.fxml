@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.FXMLShowCoursesController">
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #686673;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="183.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show Courses" textAlignment="CENTER" wrappingWidth="253.13671875">
+               <font>
+                  <Font name="Segoe UI" size="23.0" />
+               </font>
+            </Text>
+            <TableView fx:id="tableCourse" layoutX="34.0" layoutY="102.0" prefHeight="212.0" prefWidth="552.0">
+              <columns>
+                <TableColumn fx:id="colID" prefWidth="97.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="144.0" text="Course Name" />
+                  <TableColumn fx:id="colCredits" prefWidth="158.0" text="Credits" />
+                  <TableColumn fx:id="colCareer" prefWidth="151.0" text="Career" />
+              </columns>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.08627451211214066" green="0.07450980693101883" blue="0.14901961386203766" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
